@@ -13,14 +13,13 @@ body{
     clear: both;
     background: #000000;
     position: relative;
+    padding-bottom: 40px;
 }
 body:after{
     clear:both;
     content:"";
     display:block;
-}
-.wrapper{
-    padding-bottom: 40px;
+    
 }
 .screen {
     display:none;
