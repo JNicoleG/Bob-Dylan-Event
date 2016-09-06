@@ -1,0 +1,127 @@
+@font-face { font-family: Poplar; src: url('PoplarSTD.otf'); } 
+@font-face { font-family: "Helvetica Neue"; src:url('HelveticaNeue.dfont'); }
+    
+html{
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 669px;
+    margin: 0 auto;
+    margin-top: 50px;
+    clear: both;
+    background: #000000;
+    position: relative;
+    padding-bottom: 40px;
+
+    &:after{
+        clear:both;
+        content:"";
+        display:block;
+    }
+}
+.screen {
+    display:none;
+}
+.screen.active{
+    display:block;
+}
+h1 {
+    float: left;
+    margin: 0;
+    width: 519px;
+    text-align: center;
+    
+    img{
+        width: 400px;
+        height: auto;  
+    }
+}
+h2{
+    font-family: Poplar;
+    color: #97262a;
+    font-size: 45pt; 
+    margin: 0;
+}
+.info_space{
+    background: #FFFFFF;
+    padding: 10px 10px 10px 10px
+}
+p{
+    color: #000000;
+    font-family: Helvetica Neue;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+.frame {
+    margin: auto;
+    background: #FFFFFF;
+    width: 575px;
+    padding: 15px 15px 15px 15px;
+    
+}
+.frame:after{
+    clear:both;
+    content:"";
+    display:block;
+}
+.frame img{
+    float: left;
+}
+.frame .content{
+    float: left;
+    width: 300px;
+}
+#screen_1 .main img{
+    width: auto;
+    height: auto;
+}
+#screen_1{
+    background: #FFFFFF;
+}
+hr {
+    clear: both;
+}
+.parkImages{
+    float:left;
+    width: 250px;
+}
+img{
+    height: 300px;
+    width: 250px;
+}
+#screen_1 .header{
+    position: absolute;
+    top: 0; left:0; right: 0;
+}
+.header{
+    height: 140px;
+}
+.header .back_button{
+    float: left;   
+}
+.header .next_button{
+    float: right;
+}
+.header .arrow img{
+    height: auto;
+    width: 75px;
+}
+#screen_1 .bios img {
+    float: right;
+    z-index: 2;
+}
+hr{
+    margin: 35px 0px 35px 0px;
+    color: #000000;
+}
+.submit{
+    margin-left: 200px;
+}
+.feedback {
+    font-family: Helvetica Neue;
+    font-size: 13px;
+    margin-left: 5px;
+    color: #97262a;
+}
