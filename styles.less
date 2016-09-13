@@ -1,6 +1,10 @@
-@font-face { font-family: Poplar; src: url('PoplarSTD.otf'); } 
-@font-face { font-family: "Helvetica Neue"; src:url('HelveticaNeue.dfont'); }
-    
+@import 'https://fonts.googleapis.com/css?family=Anton|Roboto+Condensed:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i';
+
+@color-red: #97262a;
+@font-1: 'Roboto', sans-serif;
+@font-2: 'Anton', sans-serif;
+@font-3: 'Roboto Condensed', sans-serif;
+
 body{
     width: 669px;
     margin: 0 auto;
@@ -17,10 +21,10 @@ body{
     }
 }
 .feedback{
-    font-family: Helvetica Neue;
+    font-family: @font-1;
     font-size: 13px;
     margin-left: 5px;
-    color: #97262a;
+    color: @color-red;
 }
 .frame{
     margin: auto;
@@ -35,7 +39,7 @@ body{
         display:block;
     }
     
-     .content{
+    .content{
         float: left;
         width: 300px;
     }
@@ -57,8 +61,8 @@ h1{
     }
 }
 h2{
-    font-family: Poplar;
-    color: #97262a;
+    font-family: @font-2;
+    color: @color-red;
     font-size: 45pt; 
     margin: 0;
 }
@@ -101,7 +105,8 @@ img{
 }
 p{
     color: #000000;
-    font-family: Helvetica Neue;
+    font-family: @font-1;
+    font-weight:300;
     margin-left: 25px;
     margin-top: 0px;
 }
@@ -112,7 +117,7 @@ p{
 .screen {
     display:none;
 
-    .active{
+    &.active{
         display:block;
     }
 }
@@ -133,6 +138,7 @@ p{
     .main img{
         width: auto;
         height: auto;
+        display: block;
     }
 }
 .submit{

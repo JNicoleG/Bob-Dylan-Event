@@ -1,16 +1,4 @@
-@font-face {
-  font-family: Poplar;
-  src: url('PoplarSTD.otf');
-}
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url('HelveticaNeue.dfont');
-}
-html {
-  background-color: #FFFFFF;
-  margin: 0;
-  padding: 0;
-}
+@import 'https://fonts.googleapis.com/css?family=Anton|Roboto+Condensed:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i';
 body {
   width: 669px;
   margin: 0 auto;
@@ -25,37 +13,11 @@ body:after {
   content: "";
   display: block;
 }
-.screen {
-  display: none;
-}
-.screen.active {
-  display: block;
-}
-h1 {
-  float: left;
-  margin: 0;
-  width: 519px;
-  text-align: center;
-}
-h1 img {
-  width: 400px;
-  height: auto;
-}
-h2 {
-  font-family: Poplar;
+.feedback {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  margin-left: 5px;
   color: #97262a;
-  font-size: 45pt;
-  margin: 0;
-}
-.info_space {
-  background: #FFFFFF;
-  padding: 10px 10px 10px 10px;
-}
-p {
-  color: #000000;
-  font-family: Helvetica Neue;
-  margin-left: 25px;
-  margin-top: 0px;
 }
 .frame {
   margin: auto;
@@ -68,39 +30,38 @@ p {
   content: "";
   display: block;
 }
-.frame img {
-  float: left;
-}
 .frame .content {
   float: left;
   width: 300px;
 }
-#screen_1 .main img {
-  width: auto;
+.frame img {
+  float: left;
+}
+h1 {
+  float: left;
+  margin: 0;
+  width: 519px;
+  text-align: center;
+}
+h1 img {
+  width: 400px;
   height: auto;
 }
-#screen_1 {
-  background: #FFFFFF;
+h2 {
+  font-family: 'Anton', sans-serif;
+  color: #97262a;
+  font-size: 45pt;
+  margin: 0;
 }
 hr {
   clear: both;
 }
-.parkImages {
-  float: left;
-  width: 250px;
-}
-img {
-  height: 300px;
-  width: 250px;
-}
-#screen_1 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 .header {
   height: 140px;
+}
+.header .arrow img {
+  height: auto;
+  width: 75px;
 }
 .header .back_button {
   float: left;
@@ -108,24 +69,58 @@ img {
 .header .next_button {
   float: right;
 }
-.header .arrow img {
-  height: auto;
-  width: 75px;
+hr {
+  margin: 35px 0px 35px 0px;
+  color: #000000;
+}
+html {
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+.info_space {
+  background: #FFFFFF;
+  padding: 10px 10px 10px 10px;
+}
+img {
+  height: 300px;
+  width: 250px;
+}
+p {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-left: 25px;
+  margin-top: 0px;
+}
+.parkImages {
+  float: left;
+  width: 250px;
+}
+.screen {
+  display: none;
+}
+.screen.active {
+  display: block;
+}
+#screen_1 {
+  background: #FFFFFF;
 }
 #screen_1 .bios img {
   float: right;
   z-index: 2;
 }
-hr {
-  margin: 35px 0px 35px 0px;
-  color: #000000;
+#screen_1 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#screen_1 .main img {
+  width: auto;
+  height: auto;
+  display: block;
 }
 .submit {
   margin-left: 200px;
-}
-.feedback {
-  font-family: Helvetica Neue;
-  font-size: 13px;
-  margin-left: 5px;
-  color: #97262a;
 }
