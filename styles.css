@@ -1,4 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Anton|Roboto+Condensed:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i';
+
+
 body {
   width: 669px;
   margin: 0 auto;
@@ -37,10 +39,13 @@ body:after {
 .frame img {
   float: left;
 }
+.form h2{
+    font-size: 25pt;
+}
 h1 {
   float: left;
   margin: 0;
-  width: 519px;
+  width: 495px;
   text-align: center;
 }
 h1 img {
@@ -61,7 +66,10 @@ hr {
 }
 .header .arrow img {
   height: auto;
-  width: 75px;
+  width: 65px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .header .back_button {
   float: left;
@@ -86,6 +94,7 @@ img {
   height: 300px;
   width: 250px;
 }
+
 p {
   color: #000000;
   font-family: 'Roboto', sans-serif;
